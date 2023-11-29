@@ -4,28 +4,24 @@
 
 The aim is to construct a consolidated and interactive PowerBI report that will allow Zomato to quickly assess the required data.
 
- ### Data Sources
+### Data Cleaning/Data Preparation
 
- ### Tool
-
- ### Data Cleaning/Data Preparation
-
- 1. Import the data from all available Excel files
+1. Import the data from all available Excel files
 
 2. Data transformation: 
 
-Make sure the City column names are corrected 
+- Make sure the City column names are corrected
 
- For example: 
+  For example: 
 
-“Sí£o Paulo” should be corrected to “São Paulo”
+  “Sí£o Paulo” should be corrected to “São Paulo”
 
-Ensure the city name isn't ambiguous
-For example: 
+- Ensure the city name isn't ambiguous
+  For example: 
 
-“Cedar Rapids/Iowa City” should be corrected to “Cedar Rapids”
+  “Cedar Rapids/Iowa City” should be corrected to “Cedar Rapids”
 
-“ÛÁstanbul” should be corrected to “Istanbul”
+  “ÛÁstanbul” should be corrected to “Istanbul”
 
 3. Remove any columns that aren't being used 
 
@@ -35,19 +31,21 @@ For example:
 
 6. As it's a dimension table, the Country-Code table must only include unique and non-blank values
 
+### Data Analysis Expressions(DAX)
+
 1) Add a Rating color column in an appropriate table with the data rows in the format given below
 
  
 
 2) Create the following measures in the appropriate tables 
 
-a. Restaurant count
+    a. Restaurant count
 
-b. Average cost
+    b. Average cost
 
-c. Average rating 
+    c. Average rating 
 
-d. Cuisine count
+    d. Cuisine count
 
 3) Create a new column in the Country Code table and name it “Continent” and create the values using the below-mentioned convention
 
